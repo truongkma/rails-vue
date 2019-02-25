@@ -20,7 +20,7 @@ module Rails
         html_options = opt.reverse_merge(props)
         html_options.except!(:tag)
         vue_script = <<~VUE_SCRIPT
-          $(document).ready(function(){
+          $(function () {
             new Vue({
               el: "##{opt.fetch(:id, component_name)}",
               data: function(){
