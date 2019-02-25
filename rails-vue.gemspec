@@ -1,13 +1,14 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "vue-rails/version"
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "rails-vue/version"
 
 Gem::Specification.new do |s|
-  s.name        = "vue-rails"
-  s.version     = Vue::Rails::VERSION
+  s.name        = "rails-vue"
+  s.version     = Rails::Vue::VERSION
   s.authors     = ["truongkma"]
-  s.email       = ["nd.truong1902@gmail.com"]
-  s.homepage    = "https://github.com/truongkma/vue-rails"
+  s.email       = ["nguyendactruong.kma@gmail.com"]
+  s.homepage    = "https://github.com/truongkma/rails-vue"
   s.summary     = "Vuejs asset pipeline provider/wrapper"
   s.description = "A simple assets pipeline wrapper for Vuejs"
   s.license     = "MIT"

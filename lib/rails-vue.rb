@@ -1,6 +1,6 @@
-require "vue-rails/version"
-require "vue-rails/view_helper"
-require "vue-rails/engine"
+require "rails-vue/version"
+require "rails-vue/view_helper"
+require "rails-vue/engine"
 
 module Vue
   mattr_accessor :development_mode
